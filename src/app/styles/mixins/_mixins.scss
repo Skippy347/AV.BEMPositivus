@@ -3,3 +3,17 @@
 @mixin fluid-text($min: 16, $max: 48) {
   font-size: clamp(#{$min}px, math.div($max, 1440) * 100vw, #{$max}px);
 }
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
