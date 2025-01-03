@@ -1,4 +1,4 @@
-@use "../mixins/mixins";
+@use "../media/media";
 
 .container {
   max-width: calc(var(--container-width) + (var(--container-padding-x) * 2));
@@ -20,13 +20,13 @@
 }
 
 .hidden-mobile {
-  @include mixins.mobile {
+  @include media.mobile {
     display: none;
   }
 }
 
 .visible-mobile {
-  @include mixins.mobile-above {
+  @include media.mobile-above {
     display: none;
   }
 }

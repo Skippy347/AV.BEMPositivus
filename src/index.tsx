@@ -1,4 +1,6 @@
-import "./index.scss";
+import "@/app/styles/styles.scss";
+
+import { App } from "@/app/App";
 
 import { createRoot } from "react-dom/client";
 
@@ -10,4 +12,4 @@ if (!container) {
 
 const root = createRoot(container);
 
-root.render(<div>Hello world</div>);
+root.render(<App />);
