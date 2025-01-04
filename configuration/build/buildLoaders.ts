@@ -32,7 +32,7 @@ export function buildLoaders(options: BuildOptions) {
   };
 
   const imageLoader: webpack.RuleSetRule = {
-    test: /\.(ico)$/i,
+    test: /\.(ico|svg)$/i,
     type: "asset/resource",
     generator: {
       filename: "images/[name].[hash:8][ext]",
