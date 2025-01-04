@@ -5,4 +5,7 @@
 @use "./variables/variables";
 @use "./utils/utils";
 @use "./globals/globals";
+
+// blocks
+@use "./blocks/button";
 @use "./blocks/header";
