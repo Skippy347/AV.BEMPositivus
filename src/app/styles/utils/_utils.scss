@@ -21,12 +21,12 @@
 
 .hidden-mobile {
   @include media.mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 .visible-mobile {
   @include media.mobile-above {
-    display: none;
+    display: none !important;
   }
 }

@@ -30,3 +30,8 @@
   left: 50%;
   translate: -50%;
 }
+
+@mixin aspect-ratio($width, $ratio) {
+  width: $width;
+  aspect-ratio: $ratio;
+}
