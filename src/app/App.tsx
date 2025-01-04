@@ -1,6 +1,5 @@
-import React from "react";
-import logo from "../assets/images/positivus-svg.svg";
+import { Header } from "@/widgets/Header";
 
 export function App(): React.ReactElement {
-  return <img src={logo} alt="Positivus" width="500" />;
+  return <Header />;
 }
