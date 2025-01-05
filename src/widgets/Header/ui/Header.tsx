@@ -6,7 +6,7 @@ export function Header(): React.ReactElement {
     <header className="header">
       <div className="header__inner container">
         <a className="header__logo logo" href="#">
-          <img className="logo__image" src={logo} alt="Positivus" width="150" loading="lazy" />
+          <img className="logo__image" src={logo} alt="Positivus" width="220" loading="lazy" />
         </a>
         <nav className="header__menu hidden-mobile">
           <ul className="header__menu-list">
