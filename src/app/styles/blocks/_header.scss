@@ -1,23 +1,58 @@
+@use "../media/media";
 @use "../mixins/mixins";
 
 .header {
   padding-top: 60px;
+
+  @include media.desktop {
+    padding-top: 30px;
+  }
+
+  @include media.mobile {
+    padding-top: 15px;
+  }
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 40px;
+
+    @include media.tablet {
+      column-gap: 30px;
+    }
+  }
+
+  &__logo {
+    @include media.tablet {
+      max-width: 120px;
+    }
+
+    @include media.mobile {
+      max-width: 144px;
+    }
   }
 
   &__menu {
     font-size: 20px;
     margin-left: auto;
 
+    @include media.desktop {
+      font-size: 18px;
+    }
+
+    @include media.tablet {
+      font-size: 16px;
+    }
+
     &-list {
       display: flex;
       align-items: center;
       column-gap: 40px;
+
+      @include media.desktop {
+        column-gap: 20px;
+      }
     }
 
     &-link {
@@ -44,5 +79,11 @@
         transition-duration: inherit;
       }
     }
+  }
+
+  &__button {
+    font-size: 16px;
+    height: 40px;
+    padding-inline: 18px;
   }
 }
