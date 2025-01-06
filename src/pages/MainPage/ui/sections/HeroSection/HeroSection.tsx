@@ -9,7 +9,7 @@ import hero_background from "../../../../../assets/images/hero/hero-background.s
 
 export function HeroSection(): React.ReactElement {
   return (
-    <section className="section container">
+    <section className="section section--hidden-x container">
       <div className="section__body">
         <div className="hero">
           <div className="hero__main">
