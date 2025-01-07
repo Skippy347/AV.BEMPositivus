@@ -10,7 +10,7 @@ export function ServicesSection(): React.ReactElement {
   return (
     <section className="section container">
       <header className="section__header">
-        <h2 className="section__header puddle-bg">Services</h2>
+        <h2 className="section__title puddle-bg">Services</h2>
         <div className="section__description">
           <p>
             At our digital marketing agency, we offer a range of services to help businesses grow and succeed
