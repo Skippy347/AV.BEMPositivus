@@ -20,7 +20,7 @@ export function ServicesSection(): React.ReactElement {
       </header>
       <div className="section__body">
         <div className="services">
-          <ul className="services__list">
+          <ul className="services__list grid grid--2">
             <li className="services__item">
               <article className="service-card ">
                 <div className="service-card__body">
