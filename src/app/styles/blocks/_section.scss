@@ -1,3 +1,5 @@
+@use "../media/media";
+
 .section {
   padding-block: var(--section-padding-y);
 
@@ -10,8 +12,18 @@
     align-items: center;
     column-gap: 40px;
 
+    @include media.mobile {
+      flex-direction: column;
+      row-gap: 30px;
+      text-align: center;
+    }
+
     &:not(:last-child) {
       margin-bottom: 80px;
+
+      @include media.mobile {
+        margin-bottom: 40px;
+      }
     }
   }
 

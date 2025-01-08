@@ -25,8 +25,8 @@ export function ServicesSection(): React.ReactElement {
               <article className="service-card ">
                 <div className="service-card__body">
                   <h3 className="service-card__title">
-                    <span className="puddle-bg">Search engine optimization</span>
-                    <span className="puddle-bg">optimization</span>
+                    <span className="puddle-bg puddle-bg--accent">Search engine</span>
+                    <span className="puddle-bg puddle-bg--accent">optimization</span>
                   </h3>
                   <a className="service-card__link" href="#">
                     <span className="service-card__link-icon-wrapper">
@@ -57,7 +57,7 @@ export function ServicesSection(): React.ReactElement {
               </article>
             </li>
             <li className="services__item">
-              <article className="service-card service-card-accent-bg">
+              <article className="service-card service-card--accent-bg">
                 <div className="service-card__body">
                   <h3 className="service-card__title">
                     <span className="puddle-bg puddle-bg--light">Pay-per-click</span>
@@ -92,13 +92,13 @@ export function ServicesSection(): React.ReactElement {
               </article>
             </li>
             <li className="services__item">
-              <article className="service-card service-card-dark-bg">
+              <article className="service-card service-card--dark-bg">
                 <div className="service-card__body">
                   <h3 className="service-card__title">
                     <span className="puddle-bg puddle-bg--light">Social Media</span>
                     <span className="puddle-bg puddle-bg--light">Marketing</span>
                   </h3>
-                  <a className="service-card__link service-card__link-light" href="#">
+                  <a className="service-card__link service-card__link--light" href="#">
                     <span className="service-card__link-icon-wrapper">
                       <svg
                         width="21"
@@ -127,7 +127,7 @@ export function ServicesSection(): React.ReactElement {
               </article>
             </li>
             <li className="services__item">
-              <article className="service-card">
+              <article className="service-card ">
                 <div className="service-card__body">
                   <h3 className="service-card__title">
                     <span className="puddle-bg">Email</span>
@@ -162,7 +162,7 @@ export function ServicesSection(): React.ReactElement {
               </article>
             </li>
             <li className="services__item">
-              <article className="service-card service-card-accent-bg">
+              <article className="service-card service-card--accent-bg">
                 <div className="service-card__body">
                   <h3 className="service-card__title">
                     <span className="puddle-bg puddle-bg--light">Content</span>
@@ -197,7 +197,7 @@ export function ServicesSection(): React.ReactElement {
               </article>
             </li>
             <li className="services__item">
-              <article className="service-card service-card-dark-bg">
+              <article className="service-card service-card--dark-bg">
                 <div className="service-card__body">
                   <h3 className="service-card__title">
                     <span className="puddle-bg puddle-bg--light">Analytics and </span>
@@ -232,11 +232,11 @@ export function ServicesSection(): React.ReactElement {
               </article>
             </li>
           </ul>
-          <div className="services__bunner">
+          <div className="services__banner">
             <div className="banner__inner">
               <div className="banner__body">
-                <h3 className="bunner__title">Let’s make things happen</h3>
-                <div className="bunner__description">
+                <h3 className="banner__title">Let’s make things happen</h3>
+                <div className="banner__description">
                   <p>
                     Contact us today to learn more about how our digital marketing services can help your
                     business grow and succeed online.
@@ -244,7 +244,14 @@ export function ServicesSection(): React.ReactElement {
                 </div>
                 <button className="banner__button button">Get your free proposal</button>
               </div>
-              <img className="banner__image" src={frame_bg} alt="" height="394" width="494" loading="lazy" />
+              <img
+                className="banner__image hidden-mobile"
+                src={frame_bg}
+                alt=""
+                height="394"
+                width="494"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
